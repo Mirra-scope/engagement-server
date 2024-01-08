@@ -8,6 +8,7 @@ import { GraphQLModule } from '@nestjs/graphql';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { DataSource } from 'typeorm';
 import { join } from 'path';
+import { ReviewModule } from './review/review.module';
 
 @Module({
   imports: [
@@ -49,6 +50,7 @@ import { join } from 'path';
         return addTransactionalDataSource(new DataSource(options));
       },
     }),
+    ReviewModule,
   ],
   controllers: [AppController],
   providers: [AppService],

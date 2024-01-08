@@ -1,6 +1,6 @@
 import { ObjectType, Field } from '@nestjs/graphql';
 import { Entity } from 'typeorm';
-import { DecimalColumn, TextColumn, VarcharColumn } from 'src/decorator/entity/entity.decorator';
+import { DecimalColumn, TextColumn, UuidColumn, VarcharColumn } from 'src/decorator/entity/entity.decorator';
 import { EntityBase } from 'src/base/EntityBase';
 
 @ObjectType()
@@ -15,11 +15,11 @@ export class Review extends EntityBase {
   comment: string;
 
   @Field()
-  @VarcharColumn()
-  user: string;
+  @UuidColumn()
+  userId: string;
 
   @Field()
-  @VarcharColumn()
+  @UuidColumn()
   contextId: string;
 
   @Field()

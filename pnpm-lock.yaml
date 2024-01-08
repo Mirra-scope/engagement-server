@@ -52,7 +52,7 @@ dependencies:
     version: 16.8.1
   move-types:
     specifier: ^1.0.7
-    version: 1.0.10(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(graphql@16.8.1)(reflect-metadata@0.1.14)
+    version: 1.0.21(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(graphql@16.8.1)(reflect-metadata@0.1.14)
   mysql2:
     specifier: ^3.6.5
     version: 3.6.5
@@ -4879,8 +4879,8 @@ packages:
       obliterator: 2.0.4
     dev: false
 
-  /move-types@1.0.10(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(graphql@16.8.1)(reflect-metadata@0.1.14):
-    resolution: {integrity: sha512-Oyg/TaLIMxuyyIDaZeXT1d9me2Vqo+AYil7NeQGCirVgnHmFjHNSqNIvv7xwchsLwsJP9D6lAwO1SSK1FXhkmw==}
+  /move-types@1.0.21(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(graphql@16.8.1)(reflect-metadata@0.1.14):
+    resolution: {integrity: sha512-gAZM2GXT32ZJkmXWZySOQI6Xr3Qxg0pAhEPebE3sBas8Nc5jzBxwWDy1yKfTlXcJR7HJD5FNitUqSp+30TOpUQ==}
     dependencies:
       '@nestjs/graphql': 12.0.11(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(class-transformer@0.5.1)(class-validator@0.14.0)(graphql@16.8.1)(reflect-metadata@0.1.14)
       class-transformer: 0.5.1
