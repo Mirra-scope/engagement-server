@@ -9,6 +9,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { DataSource } from 'typeorm';
 import { join } from 'path';
 import { ReviewModule } from './review/review.module';
+import { ViewModule } from './click/view/view.module';
+import { FirebaseModule } from './firebase/firebase.module';
 
 @Module({
   imports: [
@@ -51,6 +53,8 @@ import { ReviewModule } from './review/review.module';
       },
     }),
     ReviewModule,
+    ViewModule,
+    FirebaseModule,
   ],
   controllers: [AppController],
   providers: [AppService],
